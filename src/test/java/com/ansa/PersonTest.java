@@ -34,6 +34,8 @@ public class PersonTest extends DBUnitConfig {
     public void testGetAll() throws Exception {
         List<Person> persons = service.getAll();
 
+
+
         IDataSet expectedData = new FlatXmlDataSetBuilder().build(
                 Thread.currentThread().getContextClassLoader()
                         .getResourceAsStream("person-data.xml"));
