@@ -1,21 +1,24 @@
 package com.ansa;
 
-import java.util.List;
+import com.ansa.hierarchy.AudioDisc;
+import com.ansa.hierarchy.Disc;
+import com.ansa.hierarchy.DiscService;
+
 
 public class MainClass {
     public static void main(String[] args) {
-        PersonService personService = new PersonService();
+        DiscService discService = new DiscService();
 
-        Person p = new Person();
-        p.setName("name");
-        personService.save(p);
+        Disc disc = new Disc(100, "disc1");
 
-        List<Person> personList = personService.getAll();
+        AudioDisc audioDisc = new AudioDisc(10, "audio disc", 5, "Elton");
 
-        System.out.println(personList);
+        discService.saveDisc(audioDisc);
 
-        personService.delete(p);
+        discService.saveDisc(disc);
 
-        System.out.println(personService.getAll().size());
+        for (Disc d : discService.getAll()){
+            System.out.println(d.getName());
+        }
     }
 }
