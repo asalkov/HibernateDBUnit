@@ -13,4 +13,7 @@ public class VideoDisc extends Disc {
         this.director = director;
         this.language = language;
     }
+
+    public VideoDisc() {
+    }
 }

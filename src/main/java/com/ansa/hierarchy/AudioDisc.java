@@ -8,6 +8,10 @@ public class AudioDisc extends Disc {
     int trackCount;
     String artist;
 
+    public AudioDisc() {
+    }
+
+
     public int getTrackCount() {
         return trackCount;
     }

@@ -21,6 +21,9 @@ public class Disc {
         this.name = name;
     }
 
+    public Disc() {
+    }
+
     public String getName() {
         return name;
     }

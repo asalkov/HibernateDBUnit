@@ -9,11 +9,11 @@
 
         <properties>
             <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:h2:file:./chapter1"/>
-            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.url" value="jdbc:h2:file:c://test;;MV_STORE=FALSE;MVCC=FALSE"/>
+            <property name="hibernate.connection.username" value=""/>
             <property name="hibernate.connection.password" value=""/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>
