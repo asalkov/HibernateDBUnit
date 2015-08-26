@@ -7,10 +7,12 @@ import org.dbunit.PropertiesBasedJdbcDatabaseTester;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.operation.DatabaseOperation;
 import org.junit.Before;
+import org.junit.Ignore;
 
 import java.io.IOException;
 import java.util.Properties;
 
+@Ignore
 public class DBUnitConfig extends DBTestCase {
     protected IDataSet beforeData;
     private Properties prop;

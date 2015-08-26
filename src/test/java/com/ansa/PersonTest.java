@@ -5,13 +5,13 @@ import org.dbunit.Assertion;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
 
-/**
- * Created by asalkov on 20.08.2015.
- */
+
+@Ignore
 public class PersonTest extends DBUnitConfig {
     private PersonService service = new PersonService();
 
